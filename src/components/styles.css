@@ -1,0 +1,77 @@
+.App {
+  background:rgb(111, 194, 111);
+  color: gray;
+}
+
+#intro {
+    background-image: url('https://wallpapers.com/images/hd/binary-code-code-numbers-green-glow-agx3h70ga36galq2.jpg')
+}
+
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+h1 {
+    font-family: 'PT Sans', sans-serif; 
+}
+
+.IntroText {
+    margin: 10% auto;
+    color: cornsilk;
+}
+
+.IntroText h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.IntroText h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    position: absolute;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-inner img {
+    width: auto;
+    height: 400px;
+    max-height: 400px;
+    padding: 20px;
+}
+
+#skill {
+    position: relative;
+    background:rgb(111, 194, 111);
+    z-index: 2;
+    margin-top: 500px;
+}
+
+#hobby {
+    background:rgb(111, 194, 111);
+    z-index: 2;
+}
+
+#language {
+    background:rgb(111, 194, 111);
+    z-index: 2;
+}
+
+#project {
+    background:rgb(111, 194, 111);
+    z-index: 2;
+}
+
+#footer {
+    padding: 30px;
+    background-color: black;
+    text-align: center;
+}
+
+#footer a {
+    padding: 10px;
+}
