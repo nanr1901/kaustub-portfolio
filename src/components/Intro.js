@@ -4,7 +4,7 @@ function Intro() {
     // var img_url='https://wallpapers.com/images/hd/binary-code-code-numbers-green-glow-agx3h70ga36galq2.jpg'
     return (
         <section id='intro'>
-            <div className='container-fluid'>
+            <div className='container-fluid overlay'>
             <div className='row'>
             <div className='IntroText col-lg-6 col-md-12 col-sm-12'>
                 <h1>Hi I'm Kaustub Sreekrishnan</h1>
