@@ -14,6 +14,7 @@
     /* opacity : 0.5; */
 }
 
+
 #intro {
     background-image: url('../../assets/intro-img.jpg');
     /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../../assets/intro-img.jpg"); */
@@ -30,21 +31,26 @@
     z-index: -1;
 }
 
-h1 {
-    /* font-family: 'PT Sans', sans-serif;  */
-}
+
 
 .IntroText {
     margin: 10% auto;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: rgba(216, 179, 56, 0.33);
-    color: rgb(55, 54, 54)
+    color: rgb(55, 54, 54);
+   
 }
 
 .IntroText h1 {
     /* font-family: 'Roboto Condensed', sans-serif; */
+    margin: 2rem 0 1.5rem 0;
     text-align: center;
     color: rgba(216, 179, 56, 1);
+}
+
+.IntroText h3{
+    margin: 0 2rem 1.5rem 2rem;
+    text-align: center;
 }
 
 .l1 {
@@ -64,41 +70,84 @@ h2 {
     padding-top: 200px;
 }
 
+/* .carousel-inner{
+    display:flex;
+    flex-direction: column;
+} */
 .carousel-inner img {
-    width: auto;
-    height: 400px;
-    max-height: 400px;
-    padding: 20px;
+    /* width: 45%;
+    height: 50%; */
+    max-height: 25rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
-#skill {
+h5{
+    color:white;
+}
+
+#skill,
+#project,
+#footer{
     position: relative;
-    background:rgb(111, 194, 111);
+    background:black;
     z-index: 2;
-    margin-top: 500px;
+
+    padding-bottom: 5rem;
 }
 
-#hobby {
-    background:rgb(111, 194, 111);
-    z-index: 2;
+#hobby,#language{
+    background:#333456;
+    padding-bottom: 5rem;
 }
 
-#language {
-    background:rgb(111, 194, 111);
-    z-index: 2;
+#skill{
+    margin-top: 31.25rem;
 }
 
-#project {
-    background:rgb(111, 194, 111);
-    z-index: 2;
+
+#footer{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1.5rem;
 }
 
-#footer {
-    padding: 30px;
-    background-color: black;
+#footer a{
+    padding: 1rem;
+}
+
+
+.skills-heading{
     text-align: center;
+    padding-top: 3rem;
+    font-weight: 600;
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
 }
 
-#footer a {
-    padding: 10px;
+
+.d-block{
+  border-radius:20rem;
+  opacity: 0.6;
+}
+
+.carousel-caption{
+   margin:auto;
+    font-size: 9rem;
+}
+
+ol li{
+    visibility: hidden;
+}
+
+.proj-caption{
+    font-size: 3rem;
+}
+
+
+.hobby-caption{
+    font-size: 6rem;
 }

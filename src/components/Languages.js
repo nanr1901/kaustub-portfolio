@@ -2,52 +2,70 @@ import React from "react";
 
 function Languages() {
     var pythonimg = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png';
-    var cppimg = 'https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1264479/retina_1708x683_COVER-dcbcd112f1d502d97d7f2467c1ce21da.png';
+    var cppimg = 'https://i.pinimg.com/originals/d2/0b/36/d20b362a9cf422dd0e056bf32ddde12c.jpg';
     var jsimg = 'https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png';
     var javaimg = 'https://cdn-icons-png.flaticon.com/512/226/226777.png';
 
     return (
-        <section id="language">
-    <h1>LANGUAGES</h1>
-    <div id="language-slide" className="carousel slide" data-ride='carousel'>
-    <div className="carousel-inner">
-        <div className="carousel-item active">
-            <div className="row">
-            <img src = {pythonimg} alt = 'Python img' className='col-lg-6 col-md-12 col-sm-12'/>
-            <h2 className='col-lg-6 col-md-12 col-sm-12'>Python</h2>
-            </div>
-        </div>
+    //   
+    
+    <section id="language">
 
-        <div className="carousel-item">
-            <div className="row">
-            <img src = {cppimg} alt = 'cpp img' className='col-lg-6 col-md-12 col-sm-12'/>
-            <h2 className='col-lg-6 col-md-12 col-sm-12'>C & C++</h2>
-            </div>
-        </div>
-        
-        <div className="carousel-item">
-            <div className="row">
-            <img src = {jsimg} alt = 'js img' className='col-lg-6 col-md-12 col-sm-12'/>
-            <h2 className='col-lg-6 col-md-12 col-sm-12'>JavaScript</h2>
-            </div>
-        </div>
-        <div className="carousel-item">
-            <div className="row">
-            <img src = {javaimg} alt = 'java img' className='col-lg-6 col-md-12 col-sm-12'/>
-            <h2 className='col-lg-6 col-md-12 col-sm-12'>Java</h2>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#language-slide" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#language-slide" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-    </section>
+    <div className="skills-heading">LANGUAGES</div>
+      <div id="language-slide" className="carousel slide" data-ride='carousel'>
+       <ol className="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+    </ol>
+      <div className="carousel-inner">
+          <div className="carousel-item active">
+          <div>
+                <img className="d-block" src={pythonimg} alt="First slide" />
+              </div>
+              <div className="carousel-caption">
+                <p>Python</p>
+              </div>
+          </div>
+  
+          <div className="carousel-item">
+          <div>
+                <img className="d-block" src={cppimg} alt="Second slide" />
+              </div>
+              <div className="carousel-caption">
+                <p>C++</p>
+              </div>
+          </div>
+          
+          <div className="carousel-item">
+          <div>
+                <img className="d-block" src={jsimg} alt="Third slide" />
+              </div>
+              <div className="carousel-caption">
+                <p>JavaScript</p>
+              </div>
+          </div>
+
+          <div className="carousel-item">
+          <div>
+                <img className="d-block" src={javaimg} alt="First slide" />
+              </div>
+              <div className="carousel-caption">
+                <p>Java</p>
+              </div>
+          </div>
+      </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#language-slide" data-bs-slide="prev" onClick={()=>console.log('hello')}>
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#language-slide" data-bs-slide="next">
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Next</span>
+      </button>
+      </div>
+      </section>
     )
 }
 

@@ -6,41 +6,53 @@ function Hobbies() {
     var gymimg = 'https://qph.cf2.quoracdn.net/main-qimg-6ee738ec69d399c7c5fdc9585670c497.webp';
     
     return (
-    <section id="hobby">
-    <h1>HOBBIES</h1>
-    <div id="hobby-slide" className="carousel slide" data-ride='carousel'>
-    <div className="carousel-inner">
-        <div className="carousel-item active">
-            <div className="row">
-            <img src = {readimg} alt = 'readimg' className='col-lg-6 col-md-12 col-sm-12'/>
-            <h2 className='col-lg-6 col-md-12 col-sm-12'>Reading</h2>
-            </div>
-        </div>
+        <section id="hobby">
 
-        <div className="carousel-item">
-            <div className="row">
-            <img src = {ttimg} alt = 'ttimg' className='col-lg-6 col-md-12 col-sm-12'/>
-            <h2 className='col-lg-6 col-md-12 col-sm-12'>Table Tennis</h2>
-            </div>
-        </div>
-        
-        <div className="carousel-item">
-            <div className="row">
-            <img src = {gymimg} alt = 'gymimg' className='col-lg-6 col-md-12 col-sm-12'/>
-            <h2 className='col-lg-6 col-md-12 col-sm-12'>Working out</h2>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#hobby-slide" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#hobby-slide" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-    </section>
+        <div className="skills-heading">HOBBIES</div>
+          <div id="hobby-slide" className="carousel slide" data-ride='carousel'>
+           <ol className="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+          <div className="carousel-inner">
+              <div className="carousel-item active">
+              <div>
+                    <img className="d-block" src={readimg} alt="First slide" />
+                  </div>
+                  <div className="carousel-caption hobby-caption">
+                    <p>Reading</p>
+                  </div>
+              </div>
+      
+              <div className="carousel-item">
+              <div>
+                    <img className="d-block" src={ttimg} alt="Second slide" />
+                  </div>
+                  <div className="carousel-caption hobby-caption">
+                    <p>Table Tennis</p>
+                  </div>
+              </div>
+              
+              <div className="carousel-item">
+              <div>
+                    <img className="d-block" src={gymimg} alt="Third slide" />
+                  </div>
+                  <div className="carousel-caption hobby-caption">
+                    <p>Working out</p>
+                  </div>
+              </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#hobby-slide" data-bs-slide="prev" onClick={()=>console.log('hello')}>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#hobby-slide" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+          </button>
+          </div>
+          </section>
     );
 }
 
