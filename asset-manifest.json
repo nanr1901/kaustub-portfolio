@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kaustub-portfolio/static/css/main.b1914e9c.css",
+    "main.js": "/kaustub-portfolio/static/js/main.4ebca976.js",
+    "static/media/intro-img.jpg": "/kaustub-portfolio/static/media/intro-img.978f323984eb6970ab22.jpg",
+    "index.html": "/kaustub-portfolio/index.html",
+    "main.b1914e9c.css.map": "/kaustub-portfolio/static/css/main.b1914e9c.css.map",
+    "main.4ebca976.js.map": "/kaustub-portfolio/static/js/main.4ebca976.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1914e9c.css",
+    "static/js/main.4ebca976.js"
+  ]
+}
